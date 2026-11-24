@@ -1,0 +1,51 @@
+ID,Campus,Stream,Year,Age,Gender,Living,Locality,Allowance,SideIncome,Rent,Food,Commute,Academics,Reported_Total,Stress,Housing,Sharing,Stream_Group,Allowance_Imputed,Commute_Imputed,Stress_Imputed,Flag_Age_Year,Computed_Total,Total_Gap,Flag_Total_Mismatch,Flag_Hostel_Fee_Excluded,Outlier_Count,Flag_Outlier
+1,Bidholi,B.Tech CSE / AI,1,19,Female,Campus Hostel,Bidholi Hostel,9500.0,0,0,3500,1500.0,3000,7000,3,Hostel,NA,Engineering,0,0,0,0,8000.0,1000.0,0,1,0,0
+2,Bidholi,B.Tech CSE / AI,2,19,Female,PG (Single),Pondha,23000.0,0,11500,5000,1500.0,5500,25000,7,PG,Single,Engineering,0,0,0,0,23500.0,-1500.0,0,0,0,0
+3,Bidholi,B.Tech Core Engg,3,20,Female,Rented Flat,Bidholi,18000.0,8000,9500,7000,2000.0,4000,23000,6,Flat,Shared/Flat,Engineering,0,0,0,0,22500.0,-500.0,0,0,1,1
+4,Bidholi,B.Tech Core Engg,4,23,Male,Rented Flat,Pondha,45000.0,0,14000,12500,7500.0,9000,42000,3,Flat,Shared/Flat,Engineering,0,0,0,0,43000.0,1000.0,0,0,3,1
+5,Kandoli,Law (BA LLB / BBA LLB),3,20,Male,Rented Flat,Kandoli,17000.0,0,12500,3000,500.0,4000,16000,4,Flat,Shared/Flat,Law,0,0,0,0,20000.0,4000.0,0,0,0,0
+6,Kandoli,BBA / MBA,1,18,Female,Campus Hostel,Kandoli Hostel,14000.0,0,0,5500,500.0,4000,9000,4,Hostel,NA,Management,0,0,0,0,10000.0,1000.0,0,1,0,0
+7,Kandoli,Health Sciences,2,19,Female,PG (Single),Kandoli,19000.0,5000,9500,7000,500.0,6500,25000,8,PG,Single,Health,1,0,0,0,23500.0,-1500.0,0,0,1,1
+8,Bidholi,B.Tech Core Engg,1,20,Male,PG (Single),Nanda Ki Chowki,15000.0,0,14000,7000,3500.0,4500,29000,9,PG,Single,Engineering,0,0,0,0,29000.0,0.0,0,0,0,0
+9,Bidholi,B.Tech CSE / AI,1,19,Male,PG (Shared),Nanda Ki Chowki,20000.0,0,8000,7500,3500.0,5500,27000,10,PG,Shared/Flat,Engineering,0,0,0,0,24500.0,-2500.0,0,0,0,0
+10,Bidholi,B.Tech Core Engg,1,18,Female,PG (Shared),Prem Nagar,15000.0,0,7500,6000,3500.0,3000,18000,9,PG,Shared/Flat,Engineering,0,0,0,0,20000.0,2000.0,0,0,0,0
+11,Bidholi,B.Tech Core Engg,2,19,Female,PG (Shared),Nanda Ki Chowki,16000.0,0,8500,1000,2500.0,3000,14500,3,PG,Shared/Flat,Engineering,0,0,0,0,15000.0,500.0,0,0,0,0
+12,Bidholi,B.Tech Core Engg,3,21,Female,Rented Flat,Bidholi,23000.0,17000,7500,9000,4500.0,5500,25000,3,Flat,Shared/Flat,Engineering,0,0,0,0,26500.0,1500.0,0,0,1,1
+13,Kandoli,Law (BA LLB / BBA LLB),4,21,Male,Campus Hostel,Kandoli Hostel,16000.0,0,0,3000,500.0,4500,8000,2,Hostel,NA,Law,0,0,0,0,8000.0,0.0,0,1,0,0
+14,Bidholi,Design,2,21,Male,PG (Shared),Bidholi,9500.0,0,14500,2000,500.0,4500,17000,8,PG,Shared/Flat,Design,0,0,0,0,21500.0,4500.0,1,0,0,0
+15,Bidholi,B.Tech CSE / AI,1,18,Undisclosed,PG (Single),Bidholi,18000.0,0,14500,6500,2000.0,2000,21000,8,PG,Single,Engineering,0,1,0,0,25000.0,4000.0,0,0,0,0
+16,Kandoli,Law (BA LLB / BBA LLB),4,21,Female,PG (Shared),Prem Nagar,18000.0,0,8500,6500,2000.0,4000,19000,6,PG,Shared/Flat,Law,0,0,0,0,21000.0,2000.0,0,0,0,0
+17,Kandoli,Health Sciences,1,18,Female,Campus Hostel,Kandoli Hostel,9000.0,0,0,6000,0.0,2500,8000,4,Hostel,NA,Health,0,0,0,0,8500.0,500.0,0,1,0,0
+18,Bidholi,B.Tech CSE / AI,4,19,Male,Home (Day Scholar),Prem Nagar,5000.0,25000,0,3000,3000.0,1500,22000,2,Home,NA,Engineering,0,0,0,1,7500.0,-14500.0,1,0,1,1
+19,Kandoli,Law (BA LLB / BBA LLB),1,19,Male,Campus Hostel,Kandoli Hostel,8000.0,0,0,2500,1000.0,500,3000,6,Hostel,NA,Law,0,0,0,0,4000.0,1000.0,1,1,0,0
+20,Kandoli,Health Sciences,2,19,Female,Campus Hostel,Kandoli Hostel,10000.0,0,0,1000,1000.0,4500,7500,3,Hostel,NA,Health,0,0,0,0,6500.0,-1000.0,0,1,0,0
+21,Bidholi,B.Tech Core Engg,2,19,Male,PG (Shared),Pondha,23000.0,2000,7500,11500,2500.0,4500,26000,5,PG,Shared/Flat,Engineering,0,0,0,0,26000.0,0.0,0,0,0,0
+22,Bidholi,B.Tech CSE / AI,3,20,Female,Rented Flat,Bidholi,19000.0,19000,9000,10500,500.0,7000,25000,5,Flat,Shared/Flat,Engineering,0,0,0,0,27000.0,2000.0,0,0,1,1
+23,Kandoli,Law (BA LLB / BBA LLB),1,18,Male,Home (Day Scholar),Rajpur Road,8500.0,0,0,1500,4000.0,500,7000,4,Home,NA,Law,0,0,0,0,6000.0,-1000.0,0,0,0,0
+24,Bidholi,B.Tech CSE / AI,3,20,Male,Rented Flat,Nanda Ki Chowki,25000.0,7000,12000,7500,1000.0,5500,20000,3,Flat,Shared/Flat,Engineering,0,0,0,0,26000.0,6000.0,1,0,1,1
+25,Kandoli,BBA / MBA,1,18,Male,Campus Hostel,Kandoli Hostel,14000.0,0,0,3500,1500.0,4500,9000,5,Hostel,NA,Management,0,0,0,0,9500.0,500.0,0,1,0,0
+26,Bidholi,B.Tech CSE / AI,2,20,Male,PG (Shared),Bidholi,16000.0,3000,8500,9500,1000.0,4000,20000,5,PG,Shared/Flat,Engineering,0,0,0,0,23000.0,3000.0,0,0,0,0
+27,Kandoli,Health Sciences,3,20,Male,Rented Flat,Nanda Ki Chowki,27000.0,0,12500,7500,2000.0,5000,25000,4,Flat,Shared/Flat,Health,0,0,0,0,27000.0,2000.0,0,0,0,0
+28,Kandoli,Liberal Studies / Media,2,19,Male,PG (Single),Prem Nagar,25000.0,0,16000,3000,4500.0,5000,25000,5,PG,Single,Liberal/Media,0,0,0,0,28500.0,3500.0,0,0,0,0
+29,Kandoli,Law (BA LLB / BBA LLB),3,20,Male,PG (Shared),Nanda Ki Chowki,15000.0,0,5000,6000,2500.0,2000,12000,3,PG,Shared/Flat,Law,0,0,0,0,15500.0,3500.0,1,0,0,0
+30,Bidholi,B.Tech CSE / AI,1,18,Female,PG (Shared),Bidholi,24000.0,0,8000,8000,1500.0,2500,19000,6,PG,Shared/Flat,Engineering,0,0,1,0,20000.0,1000.0,0,0,0,0
+31,Bidholi,B.Tech CSE / AI,2,19,Male,Rented Flat,Pondha,19000.0,0,9500,7500,500.0,2000,18000,5,Flat,Shared/Flat,Engineering,0,0,0,0,19500.0,1500.0,0,0,0,0
+32,Bidholi,B.Tech CSE / AI,3,22,Female,PG (Shared),Bidholi,16000.0,0,6000,5000,3000.0,2000,14000,4,PG,Shared/Flat,Engineering,0,0,0,0,16000.0,2000.0,0,0,0,0
+33,Bidholi,Design,4,21,Male,PG (Shared),Nanda Ki Chowki,16000.0,0,6000,7500,3500.0,5500,23000,8,PG,Shared/Flat,Design,0,0,0,0,22500.0,-500.0,0,0,0,0
+34,Kandoli,Liberal Studies / Media,3,22,Male,PG (Shared),Kandoli,33000.0,0,9000,12500,1500.0,5500,32000,7,PG,Shared/Flat,Liberal/Media,0,0,0,0,28500.0,-3500.0,0,0,0,0
+35,Bidholi,B.Tech Core Engg,3,21,Male,PG (Shared),Bidholi,8500.0,10000,6000,2500,500.0,1000,10000,9,PG,Shared/Flat,Engineering,0,0,0,0,10000.0,0.0,0,0,1,1
+36,Kandoli,Law (BA LLB / BBA LLB),1,18,Male,Campus Hostel,Kandoli Hostel,10000.0,0,0,5500,500.0,5000,10500,7,Hostel,NA,Law,0,0,0,0,11000.0,500.0,0,1,0,0
+37,Kandoli,BBA / MBA,2,21,Female,Campus Hostel,Kandoli Hostel,12000.0,0,0,4500,1000.0,3500,8000,4,Hostel,NA,Management,0,0,0,0,9000.0,1000.0,0,1,0,0
+38,Bidholi,B.Tech Core Engg,2,19,Male,PG (Single),Nanda Ki Chowki,26000.0,0,10500,12500,5000.0,3000,32000,9,PG,Single,Engineering,0,0,0,0,31000.0,-1000.0,0,0,0,0
+39,Bidholi,B.Tech CSE / AI,3,21,Female,Rented Flat,Prem Nagar,30000.0,3000,11000,9000,3000.0,2000,23000,3,Flat,Shared/Flat,Engineering,0,0,0,0,25000.0,2000.0,0,0,0,0
+40,Kandoli,Liberal Studies / Media,1,18,Male,PG (Shared),Kandoli,18000.0,0,7000,5500,1000.0,3500,14000,4,PG,Shared/Flat,Liberal/Media,0,0,0,0,17000.0,3000.0,0,0,0,0
+41,Kandoli,BBA / MBA,4,22,Male,PG (Shared),Kandoli,24000.0,0,7000,7500,0.0,5500,17000,3,PG,Shared/Flat,Management,0,0,0,0,20000.0,3000.0,0,0,0,0
+42,Kandoli,Liberal Studies / Media,3,20,Male,Campus Hostel,Kandoli Hostel,13000.0,6000,0,5000,0.0,3000,8000,3,Hostel,NA,Liberal/Media,0,0,0,0,8000.0,0.0,0,1,1,1
+43,Bidholi,Design,2,19,Undisclosed,PG (Single),Bidholi,20000.0,0,10500,9000,500.0,7000,27000,7,PG,Single,Design,0,0,0,0,27000.0,0.0,0,0,0,0
+44,Bidholi,Design,3,20,Male,Rented Flat,Prem Nagar,25000.0,0,7500,7500,2000.0,4500,20000,5,Flat,Shared/Flat,Design,0,0,0,0,21500.0,1500.0,0,0,0,0
+45,Bidholi,B.Tech Core Engg,3,20,Male,PG (Single),Pondha,27000.0,11000,14000,9000,4500.0,8000,39000,6,PG,Single,Engineering,0,0,0,0,35500.0,-3500.0,0,0,1,1
+46,Bidholi,B.Tech CSE / AI,2,20,Female,Campus Hostel,Bidholi Hostel,12000.0,0,0,7000,1000.0,5500,16500,10,Hostel,NA,Engineering,0,0,0,0,13500.0,-3000.0,0,1,0,0
+47,Kandoli,Liberal Studies / Media,3,20,Male,Campus Hostel,Kandoli Hostel,13000.0,0,0,5000,500.0,3500,9500,2,Hostel,NA,Liberal/Media,0,0,0,0,9000.0,-500.0,0,1,0,0
+48,Kandoli,BBA / MBA,1,18,Female,PG (Shared),Kandoli,23000.0,0,9000,8000,2000.0,5000,22000,6,PG,Shared/Flat,Management,0,0,0,0,24000.0,2000.0,0,0,0,0
+49,Kandoli,BBA / MBA,4,22,Male,Home (Day Scholar),Jakhan,9000.0,6000,0,1500,1500.0,3000,5500,4,Home,NA,Management,0,0,0,0,6000.0,500.0,0,0,1,1
+50,Bidholi,B.Tech Core Engg,1,18,Male,PG (Shared),Bidholi,21000.0,0,9000,7000,500.0,2500,19000,2,PG,Shared/Flat,Engineering,0,0,0,0,19000.0,0.0,0,0,0,0
