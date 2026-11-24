@@ -1,0 +1,153 @@
+{
+  "project": "Student Cost of Living Intelligence System",
+  "source_file": "actualdataset.ods",
+  "versions": {
+    "v0_raw": "as uploaded",
+    "v1_clean": "cleaned + flagged",
+    "v2_features": "clean + engineered features"
+  },
+  "sha256_prefix": {
+    "v0_raw.csv": "d83fab961ef58d32",
+    "v1_clean.csv": "d4c82eb3235a7386",
+    "v2_features.csv": "e75d6a54713a36e5",
+    "v3_model_outputs.csv": "69b01429652b1add"
+  },
+  "quality_audit": [
+    {
+      "dataset": "raw",
+      "rows": 50,
+      "completeness": 0.995,
+      "uniqueness": 1.0,
+      "validity": 1.0,
+      "consistency_total_vs_items": 0.9,
+      "label_uniformity": 0.94
+    },
+    {
+      "dataset": "cleaned",
+      "rows": 50,
+      "completeness": 1.0,
+      "uniqueness": 1.0,
+      "validity": 1.0,
+      "consistency_total_vs_items": 0.9,
+      "label_uniformity": 1.0
+    }
+  ],
+  "pipeline_stages": [
+    {
+      "stage": "extract",
+      "seconds": 0.103
+    },
+    {
+      "stage": "clean",
+      "seconds": 0.036
+    },
+    {
+      "stage": "wrangle",
+      "seconds": 0.008
+    }
+  ],
+  "cleaning_log": [
+    {
+      "step": "rename",
+      "detail": "Standardised 16 column names (short, snake/Title case, units dropped)",
+      "rows_affected": 16
+    },
+    {
+      "step": "text-normalise",
+      "detail": "Trimmed spaces + Title-cased Locality ('bidholi','nanda ki chowki','Prem nagar ' etc.): 12 -> 9 unique values",
+      "rows_affected": 3
+    },
+    {
+      "step": "category-merge",
+      "detail": "'Shared Flat / PG' merged into 'PG (Shared)' (same concept, 1 row)",
+      "rows_affected": 1
+    },
+    {
+      "step": "category-merge",
+      "detail": "Gender: missing + 'Prefer not to say' -> 'Undisclosed' (kept, not dropped)",
+      "rows_affected": 2
+    },
+    {
+      "step": "feature-group",
+      "detail": "Added Housing (Hostel/PG/Flat/Home) and Stream_Group for stable group statistics",
+      "rows_affected": 50
+    },
+    {
+      "step": "impute",
+      "detail": "Allowance: 1 missing -> median of same Housing group (+ Allowance_Imputed flag)",
+      "rows_affected": 1
+    },
+    {
+      "step": "impute",
+      "detail": "Commute: 1 missing -> median of same Housing group (+ Commute_Imputed flag)",
+      "rows_affected": 1
+    },
+    {
+      "step": "impute",
+      "detail": "Stress: 1 missing -> median of same Housing group (+ Stress_Imputed flag)",
+      "rows_affected": 1
+    },
+    {
+      "step": "dtype",
+      "detail": "Cast ID/Year/Age/Stress to integer; money columns to float",
+      "rows_affected": null
+    },
+    {
+      "step": "validate",
+      "detail": "Age vs Year plausibility (expected age ~ 17+Year): flagged implausible rows",
+      "rows_affected": 1
+    },
+    {
+      "step": "validate",
+      "detail": "Itemised total vs respondent's Reported_Total differs by >25%: flagged (Computed_Total, the sum of the 4 items, is used as the modelling target)",
+      "rows_affected": 5
+    },
+    {
+      "step": "validate",
+      "detail": "Hostel students report Rent=0 -> hostel fee is NOT in their cost; flagged so cost comparisons across housing are interpreted correctly",
+      "rows_affected": 12
+    },
+    {
+      "step": "outliers",
+      "detail": "Tukey 1.5*IQR fences on 7 money columns: outlier rows flagged and RETAINED (genuine high-income / side-earning students, not errors)",
+      "rows_affected": 11
+    },
+    {
+      "step": "duplicates",
+      "detail": "Exact duplicate rows: 0; duplicate IDs: 0",
+      "rows_affected": 0
+    }
+  ],
+  "data_dictionary": {
+    "ID": "Respondent identifier",
+    "Campus": "Bidholi or Kandoli campus",
+    "Stream": "Programme as reported",
+    "Stream_Group": "Programme family (derived)",
+    "Year": "Year of study 1-4",
+    "Age": "Years",
+    "Gender": "Male/Female/Undisclosed",
+    "Living": "Living arrangement (cleaned)",
+    "Housing": "Hostel/PG/Flat/Home (derived)",
+    "Locality": "Area where student lives (cleaned)",
+    "Allowance": "Monthly allowance from family (INR)",
+    "SideIncome": "Monthly side earning (INR)",
+    "Rent": "Monthly rent / stay (INR); 0 for hostel & home -> hostel fee not captured",
+    "Food": "Monthly food & dining (INR)",
+    "Commute": "Monthly travel (INR)",
+    "Academics": "Monthly academics & lifestyle (INR)",
+    "Reported_Total": "Respondent's own total estimate (INR)",
+    "Computed_Total": "Sum of the four itemised costs (INR) - modelling target",
+    "Stress": "Self-rated financial stress 1(low)-10(high)",
+    "Total_Income": "Allowance + SideIncome",
+    "Net_Balance": "Total_Income - Computed_Total",
+    "Savings_Rate": "Net_Balance / Total_Income",
+    "Spend_to_Income": "Computed_Total / Total_Income",
+    "Deficit": "1 if spending exceeds income",
+    "High_Stress": "1 if Stress >= 7",
+    "Cost_Index": "100 x cost relative to median student",
+    "Wellbeing_Score": "0-100 composite of cash cushion and low stress",
+    "Flag_*": "Data-quality flags (kept, not removed)"
+  },
+  "rows": 50,
+  "columns": 50
+}

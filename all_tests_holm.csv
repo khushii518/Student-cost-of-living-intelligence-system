@@ -1,0 +1,44 @@
+test,p_raw,p_holm,significant_5pct_after_holm
+corr Allowance~Food,0.0,0.0,True
+corr Allowance~Academics,0.0,0.0009,True
+corr Allowance~Rent,0.0,0.0,True
+ANOVA cost ~ Housing,0.0,0.0,True
+two-way ANOVA Housing (B),0.0,0.0,True
+corr Food~Academics,0.0003,0.0119,True
+corr Allowance~Commute,0.0004,0.0154,True
+Deficit independent of High_Stress (Fisher),0.0007,0.0242,True
+H1 Welch t Campus cost,0.0011,0.0402,True
+corr Rent~Food,0.0012,0.0402,True
+H4 mean cost vs 15000,0.0023,0.0768,False
+corr SideIncome~Year,0.005,0.1584,False
+corr Rent~Academics,0.0053,0.1636,False
+ANOVA stress ~ Housing,0.0065,0.1955,False
+corr Rent~Commute,0.0089,0.2593,False
+Housing independent of High_Stress (chi2),0.013,0.3633,False
+H3 stress paying > not paying (1-tail),0.0191,0.5156,False
+corr Stress~Year,0.0254,0.6597,False
+corr Food~Commute,0.0287,0.7168,False
+ANOVA cost ~ Stream_Group,0.0297,0.7168,False
+corr Rent~Stress,0.0391,0.8983,False
+corr Allowance~Year,0.0796,1.0,False
+corr Academics~Year,0.0814,1.0,False
+corr Food~Stress,0.1331,1.0,False
+corr Commute~Academics,0.1686,1.0,False
+H6 paired reported vs computed,0.2011,1.0,False
+H5 z-test deficit prop,0.217,1.0,False
+Campus independent of Deficit (Fisher),0.242,1.0,False
+corr SideIncome~Stress,0.2509,1.0,False
+corr Academics~Stress,0.2754,1.0,False
+ANOVA cost ~ Year,0.3223,1.0,False
+corr Commute~Year,0.3459,1.0,False
+corr Food~Year,0.4117,1.0,False
+two-way ANOVA Campus (A),0.4371,1.0,False
+corr Allowance~SideIncome,0.4706,1.0,False
+corr Commute~Stress,0.4745,1.0,False
+corr SideIncome~Commute,0.5466,1.0,False
+corr Rent~Year,0.5956,1.0,False
+corr SideIncome~Academics,0.6271,1.0,False
+corr SideIncome~Food,0.6478,1.0,False
+corr SideIncome~Rent,0.8487,1.0,False
+corr Allowance~Stress,0.8756,1.0,False
+two-way ANOVA A x B interaction,0.9597,1.0,False

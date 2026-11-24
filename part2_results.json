@@ -1,0 +1,673 @@
+{
+  "probability": {
+    "P(High stress)": 0.28,
+    "P(Deficit)": 0.38,
+    "P(High stress | Housing)": {
+      "Flat": 0.0,
+      "Home": 0.0,
+      "Hostel": 0.167,
+      "PG": 0.48
+    },
+    "P(Deficit | Housing)": {
+      "Flat": 0.2,
+      "Home": 0.0,
+      "Hostel": 0.167,
+      "PG": 0.6
+    },
+    "Bayes P(PG | High stress)": 0.857,
+    "P(High stress | Deficit=1)": 0.579,
+    "P(High stress | Deficit=0)": 0.097,
+    "chi2 Housing x HighStress": {
+      "chi2": 10.78,
+      "dof": 3,
+      "p": 0.013,
+      "min_expected_count": 0.84
+    },
+    "Fisher Campus x Deficit": {
+      "odds_ratio": 0.433,
+      "p": 0.242
+    },
+    "Fisher Deficit x HighStress": {
+      "odds_ratio": 12.833,
+      "p": 0.0007
+    }
+  },
+  "distributions": {
+    "mean(E[X])": 18980.0,
+    "variance": 76744489.79591836,
+    "std": 8760.39324436514,
+    "skewness(3rd moment)": 0.15938456426778674,
+    "excess kurtosis(4th)": -0.4128807260782188,
+    "median": 20000.0,
+    "fits": {
+      "normal": {
+        "loglik": -524.34,
+        "AIC": 1052.68,
+        "KS_p": 0.339,
+        "params": [
+          18980.0,
+          8672.347
+        ]
+      },
+      "lognormal": {
+        "loglik": -527.0,
+        "AIC": 1058.0,
+        "KS_p": 0.039,
+        "params": [
+          0.549,
+          0.0,
+          16650.891
+        ]
+      },
+      "gamma": {
+        "loglik": -524.52,
+        "AIC": 1053.05,
+        "KS_p": 0.107,
+        "params": [
+          3.978,
+          0.0,
+          4771.137
+        ]
+      },
+      "weibull": {
+        "loglik": -522.96,
+        "AIC": 1049.92,
+        "KS_p": 0.32,
+        "params": [
+          2.357,
+          0.0,
+          21444.492
+        ]
+      }
+    },
+    "best_by_AIC": "weibull",
+    "NelderMead_lognormal": {
+      "sigma": 0.5493,
+      "mu": 9.7201,
+      "closed_form_sigma": 0.5493,
+      "closed_form_mu": 9.7202
+    },
+    "Shapiro-Wilk": {
+      "W": 0.952,
+      "p": 0.0402
+    },
+    "Binomial: P(>=3 of 10 random students have side income)": 0.504,
+    "Side-income prevalence p": 0.26
+  },
+  "multivariate": {
+    "mean vector": {
+      "Rent": 6810.0,
+      "Food": 6230.0,
+      "Commute": 1890.0,
+      "Academics": 4050.0
+    },
+    "covariance matrix": {
+      "Rent": {
+        "Rent": 25947857.0,
+        "Food": 6799694.0,
+        "Commute": 2937857.0,
+        "Academics": 3601531.0
+      },
+      "Food": {
+        "Rent": 6799694.0,
+        "Food": 8951122.0,
+        "Commute": 1459490.0,
+        "Academics": 2661735.0
+      },
+      "Commute": {
+        "Rent": 2937857.0,
+        "Food": 1459490.0,
+        "Commute": 2482551.0,
+        "Academics": 566837.0
+      },
+      "Academics": {
+        "Rent": 3601531.0,
+        "Food": 2661735.0,
+        "Commute": 566837.0,
+        "Academics": 3308673.0
+      }
+    },
+    "correlation matrix": {
+      "Rent": {
+        "Rent": 1.0,
+        "Food": 0.446,
+        "Commute": 0.366,
+        "Academics": 0.389
+      },
+      "Food": {
+        "Rent": 0.446,
+        "Food": 1.0,
+        "Commute": 0.31,
+        "Academics": 0.489
+      },
+      "Commute": {
+        "Rent": 0.366,
+        "Food": 0.31,
+        "Commute": 1.0,
+        "Academics": 0.198
+      },
+      "Academics": {
+        "Rent": 0.389,
+        "Food": 0.489,
+        "Commute": 0.198,
+        "Academics": 1.0
+      }
+    },
+    "E[Food | Rent=r] slope": 0.2621,
+    "E[Food | Rent=14000]": 8114.0,
+    "Var[Food | Rent] (conditional)": 7169247.0,
+    "Mahalanobis outliers (chi2 97.5%)": [
+      4
+    ],
+    "strongest correlations": [
+      {
+        "pair": "Allowance ~ Rent",
+        "pearson_r": 0.666,
+        "p": 0.0,
+        "spearman_rho": 0.695,
+        "p_spearman": 0.0
+      },
+      {
+        "pair": "Allowance ~ Food",
+        "pearson_r": 0.739,
+        "p": 0.0,
+        "spearman_rho": 0.751,
+        "p_spearman": 0.0
+      },
+      {
+        "pair": "Allowance ~ Academics",
+        "pearson_r": 0.562,
+        "p": 0.0,
+        "spearman_rho": 0.495,
+        "p_spearman": 0.0003
+      },
+      {
+        "pair": "Food ~ Academics",
+        "pearson_r": 0.489,
+        "p": 0.0003,
+        "spearman_rho": 0.461,
+        "p_spearman": 0.0008
+      },
+      {
+        "pair": "Allowance ~ Commute",
+        "pearson_r": 0.48,
+        "p": 0.0004,
+        "spearman_rho": 0.322,
+        "p_spearman": 0.0225
+      },
+      {
+        "pair": "Rent ~ Food",
+        "pearson_r": 0.446,
+        "p": 0.0012,
+        "spearman_rho": 0.45,
+        "p_spearman": 0.001
+      }
+    ]
+  },
+  "sampling_estimation": {
+    "CLT n=2": {
+      "mean_of_means": 19136.0,
+      "SE_empirical": 6006.0,
+      "SE_theory sigma/sqrt(n)": 6195.0,
+      "skew": 0.037
+    },
+    "CLT n=10": {
+      "mean_of_means": 18990.0,
+      "SE_empirical": 2691.0,
+      "SE_theory sigma/sqrt(n)": 2770.0,
+      "skew": 0.087
+    },
+    "CLT n=30": {
+      "mean_of_means": 18951.0,
+      "SE_empirical": 1596.0,
+      "SE_theory sigma/sqrt(n)": 1599.0,
+      "skew": 0.087
+    },
+    "95% CI variance (chi2)": [
+      53550993.0,
+      119172554.0
+    ],
+    "95% CI std (chi2)": [
+      7318.0,
+      10917.0
+    ],
+    "mean": 18980.0,
+    "95% CI mean (t)": [
+      16490.0,
+      21470.0
+    ],
+    "95% CI mean (z)": [
+      16552.0,
+      21408.0
+    ],
+    "95% CI mean (bootstrap)": [
+      16640.0,
+      21360.0
+    ],
+    "CI by housing": [
+      {
+        "Housing": "Flat",
+        "n": 10,
+        "mean": 25800,
+        "ci_low": 21015,
+        "ci_high": 30585
+      },
+      {
+        "Housing": "Home",
+        "n": 3,
+        "mean": 6500,
+        "ci_low": 4349,
+        "ci_high": 8651
+      },
+      {
+        "Housing": "Hostel",
+        "n": 12,
+        "mean": 8750,
+        "ci_low": 7275,
+        "ci_high": 10225
+      },
+      {
+        "Housing": "PG",
+        "n": 25,
+        "mean": 22660,
+        "ci_low": 20321,
+        "ci_high": 24999
+      }
+    ],
+    "95% Wilson CI P(Deficit)": [
+      0.259,
+      0.518
+    ],
+    "95% Wilson CI P(High_Stress)": [
+      0.175,
+      0.417
+    ]
+  },
+  "hypothesis": {
+    "H1 Bidholi vs Kandoli cost (Welch t, two-tailed)": {
+      "mean_B": 22446,
+      "mean_K": 14568,
+      "t": 3.478,
+      "p": 0.0011,
+      "cohen_d": 0.997,
+      "MannWhitney_p": 0.0035
+    },
+    "H2 equal variance Bidholi vs Kandoli": {
+      "F": 0.903,
+      "p_F": 0.7916,
+      "Levene_p": 0.3998
+    },
+    "H3 one-tailed: paying-rent stress > hostel/home stress": {
+      "mean_paying": 5.66,
+      "mean_other": 4.2,
+      "t": 2.178,
+      "p_one_tailed": 0.0191
+    },
+    "H4 one-sample: mean cost vs INR 15,000 benchmark": {
+      "t": 3.213,
+      "p": 0.0023,
+      "mean": 18980
+    },
+    "H5 Z-test: P(deficit)=0.30": {
+      "observed": 0.38,
+      "z": 1.234,
+      "p": 0.217
+    },
+    "H6 paired: reported vs itemised total": {
+      "mean_diff": -540,
+      "t": -1.296,
+      "p": 0.2011
+    },
+    "One-way ANOVA cost ~ Housing": {
+      "F": 31.404,
+      "p": 0.0,
+      "eta_sq": 0.672,
+      "Kruskal_p": 0.0
+    },
+    "One-way ANOVA cost ~ Stream_Group": {
+      "F": 2.76,
+      "p": 0.0297,
+      "eta_sq": 0.239,
+      "Kruskal_p": 0.0493
+    },
+    "One-way ANOVA cost ~ Year": {
+      "F": 1.195,
+      "p": 0.3223,
+      "eta_sq": 0.072,
+      "Kruskal_p": 0.2029
+    },
+    "Tukey HSD housing": [
+      {
+        "pair": "Flat vs Home",
+        "mean_diff": 19300,
+        "p_adj": 0.0
+      },
+      {
+        "pair": "Flat vs Hostel",
+        "mean_diff": 17050,
+        "p_adj": 0.0
+      },
+      {
+        "pair": "Flat vs PG",
+        "mean_diff": 3140,
+        "p_adj": 0.3775
+      },
+      {
+        "pair": "Home vs Hostel",
+        "mean_diff": -2250,
+        "p_adj": 0.9067
+      },
+      {
+        "pair": "Home vs PG",
+        "mean_diff": -16160,
+        "p_adj": 0.0
+      },
+      {
+        "pair": "Hostel vs PG",
+        "mean_diff": -13910,
+        "p_adj": 0.0
+      }
+    ],
+    "One-way ANOVA stress ~ Housing": {
+      "F": 4.631,
+      "p": 0.0065
+    },
+    "Two-way ANOVA cost ~ Campus x Housing": [
+      {
+        "source": "Campus (A)",
+        "SS": 17698549,
+        "df": 1,
+        "MS": 17698549,
+        "F": 0.616,
+        "p": 0.4371
+      },
+      {
+        "source": "Housing (B)",
+        "SS": 1779805919,
+        "df": 3,
+        "MS": 593268640,
+        "F": 20.637,
+        "p": 0.0
+      },
+      {
+        "source": "A x B interaction",
+        "SS": 8604098,
+        "df": 3,
+        "MS": 2868033,
+        "F": 0.1,
+        "p": 0.9597
+      },
+      {
+        "source": "Residual",
+        "SS": 1207407353,
+        "df": 42,
+        "MS": 28747794,
+        "F": NaN,
+        "p": NaN
+      }
+    ],
+    "tests_run": 43,
+    "significant_after_holm": [
+      "corr Allowance~Food",
+      "corr Allowance~Academics",
+      "corr Allowance~Rent",
+      "ANOVA cost ~ Housing",
+      "two-way ANOVA Housing (B)",
+      "corr Food~Academics",
+      "corr Allowance~Commute",
+      "Deficit independent of High_Stress (Fisher)",
+      "H1 Welch t Campus cost",
+      "corr Rent~Food"
+    ]
+  },
+  "gradient_descent": {
+    "features": [
+      "Allowance",
+      "SideIncome",
+      "Year",
+      "Has_Side_Income",
+      "Is_Offcampus_Paying"
+    ],
+    "coef normal-equation": [
+      -0.0,
+      0.6097,
+      0.1667,
+      -0.104,
+      -0.0313,
+      0.4395
+    ],
+    "coef GD(lr=.05)": [
+      -0.0,
+      0.6097,
+      0.1666,
+      -0.104,
+      -0.0312,
+      0.4395
+    ],
+    "coef GD+momentum": [
+      -0.0,
+      0.6097,
+      0.1667,
+      -0.104,
+      -0.0313,
+      0.4395
+    ],
+    "coef mini-batch SGD": [
+      -0.0002,
+      0.6109,
+      0.1662,
+      -0.1035,
+      -0.0307,
+      0.4396
+    ],
+    "coef sklearn": [
+      -0.0,
+      0.6097,
+      0.1667,
+      -0.104,
+      -0.0313,
+      0.4395
+    ],
+    "max |GD - normal eq|": 3e-05,
+    "final MSE (standardised) normal-eq": 0.1457,
+    "R2 in-sample": 0.854,
+    "Condition number of design matrix": 3.09
+  },
+  "feature_selection": {
+    "filter ranking (MI / corr)": [
+      {
+        "feature": "Is_Offcampus_Paying",
+        "mutual_info": 0.531,
+        "abs_corr": 0.806
+      },
+      {
+        "feature": "Allowance",
+        "mutual_info": 0.518,
+        "abs_corr": 0.843
+      },
+      {
+        "feature": "Total_Income",
+        "mutual_info": 0.349,
+        "abs_corr": 0.743
+      },
+      {
+        "feature": "Has_Side_Income",
+        "mutual_info": 0.132,
+        "abs_corr": 0.104
+      },
+      {
+        "feature": "SideIncome",
+        "mutual_info": 0.042,
+        "abs_corr": 0.037
+      },
+      {
+        "feature": "Stress",
+        "mutual_info": 0.017,
+        "abs_corr": 0.295
+      },
+      {
+        "feature": "Self_Funded_Share",
+        "mutual_info": 0.012,
+        "abs_corr": 0.075
+      },
+      {
+        "feature": "Age",
+        "mutual_info": 0.0,
+        "abs_corr": 0.235
+      },
+      {
+        "feature": "Year",
+        "mutual_info": 0.0,
+        "abs_corr": 0.161
+      }
+    ],
+    "forward selection": [
+      {
+        "added": "Allowance",
+        "adj_R2": 0.704
+      },
+      {
+        "added": "Is_Offcampus_Paying",
+        "adj_R2": 0.829
+      },
+      {
+        "added": "Stress",
+        "adj_R2": 0.863
+      },
+      {
+        "added": "SideIncome",
+        "adj_R2": 0.882
+      },
+      {
+        "added": "Self_Funded_Share",
+        "adj_R2": 0.897
+      },
+      {
+        "added": "Has_Side_Income",
+        "adj_R2": 0.898
+      }
+    ],
+    "PCA explained variance": [
+      0.424,
+      0.168,
+      0.129,
+      0.119,
+      0.076,
+      0.072,
+      0.012
+    ],
+    "PCs for 80%": 4,
+    "PCA loadings": {
+      "PC1": {
+        "Allowance": 0.525,
+        "SideIncome": -0.003,
+        "Rent": 0.451,
+        "Food": 0.47,
+        "Commute": 0.335,
+        "Academics": 0.403,
+        "Stress": 0.163
+      },
+      "PC2": {
+        "Allowance": 0.105,
+        "SideIncome": 0.708,
+        "Rent": -0.137,
+        "Food": 0.062,
+        "Commute": 0.162,
+        "Academics": 0.08,
+        "Stress": -0.658
+      },
+      "PC3": {
+        "Allowance": -0.355,
+        "SideIncome": 0.654,
+        "Rent": 0.056,
+        "Food": 0.02,
+        "Commute": 0.061,
+        "Academics": 0.064,
+        "Stress": 0.66
+      }
+    }
+  },
+  "constrained_optimisation": [
+    {
+      "Housing": "Hostel",
+      "Budget": 10000,
+      "Rent": 0,
+      "Food": 4750,
+      "Commute": 900,
+      "Academics": 4400,
+      "converged": true
+    },
+    {
+      "Housing": "Hostel",
+      "Budget": 15000,
+      "Rent": 0,
+      "Food": 7200,
+      "Commute": 1300,
+      "Academics": 6500,
+      "converged": true
+    },
+    {
+      "Housing": "Hostel",
+      "Budget": 20000,
+      "Rent": 0,
+      "Food": 9700,
+      "Commute": 1750,
+      "Academics": 8600,
+      "converged": true
+    },
+    {
+      "Housing": "Hostel",
+      "Budget": 30000,
+      "Rent": 0,
+      "Food": 14650,
+      "Commute": 2600,
+      "Academics": 12750,
+      "converged": true
+    },
+    {
+      "Housing": "PG",
+      "Budget": 15000,
+      "Rent": 7600,
+      "Food": 3850,
+      "Commute": 850,
+      "Academics": 2700,
+      "converged": true
+    },
+    {
+      "Housing": "PG",
+      "Budget": 20000,
+      "Rent": 9650,
+      "Food": 5400,
+      "Commute": 1350,
+      "Academics": 3650,
+      "converged": true
+    },
+    {
+      "Housing": "PG",
+      "Budget": 30000,
+      "Rent": 13800,
+      "Food": 8400,
+      "Commute": 2300,
+      "Academics": 5500,
+      "converged": true
+    },
+    {
+      "Housing": "Flat",
+      "Budget": 20000,
+      "Rent": 8900,
+      "Food": 7650,
+      "Commute": 800,
+      "Academics": 2650,
+      "converged": true
+    },
+    {
+      "Housing": "Flat",
+      "Budget": 30000,
+      "Rent": 12950,
+      "Food": 10800,
+      "Commute": 1700,
+      "Academics": 4500,
+      "converged": true
+    }
+  ]
+}

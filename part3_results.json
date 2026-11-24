@@ -1,0 +1,553 @@
+{
+  "regression": {
+    "cv_table": [
+      {
+        "model": "Ridge (a=3)",
+        "R2": 0.725,
+        "R2_sd": 0.158,
+        "MAE_INR": 3393.939,
+        "RMSE_INR": 3959.83
+      },
+      {
+        "model": "Linear Regression",
+        "R2": 0.703,
+        "R2_sd": 0.171,
+        "MAE_INR": 3393.382,
+        "RMSE_INR": 4117.444
+      },
+      {
+        "model": "Random Forest",
+        "R2": 0.564,
+        "R2_sd": 0.26,
+        "MAE_INR": 4174.145,
+        "RMSE_INR": 5085.858
+      },
+      {
+        "model": "kNN (k=5)",
+        "R2": 0.501,
+        "R2_sd": 0.228,
+        "MAE_INR": 4427.669,
+        "RMSE_INR": 5554.658
+      },
+      {
+        "model": "SVR (RBF)",
+        "R2": 0.492,
+        "R2_sd": 0.226,
+        "MAE_INR": 4537.502,
+        "RMSE_INR": 5681.033
+      },
+      {
+        "model": "Decision Tree (d=3)",
+        "R2": 0.406,
+        "R2_sd": 0.383,
+        "MAE_INR": 4700.441,
+        "RMSE_INR": 5810.055
+      },
+      {
+        "model": "Baseline (mean)",
+        "R2": -0.185,
+        "R2_sd": 0.318,
+        "MAE_INR": 7437.65,
+        "RMSE_INR": 8730.801
+      }
+    ],
+    "best": "Ridge (a=3)",
+    "perm_importance": {
+      "Allowance": 1.211,
+      "Housing": 0.076,
+      "Age": 0.023,
+      "Stream_Group": 0.018,
+      "Campus": 0.018,
+      "Gender": 0.017,
+      "Year": 0.016,
+      "SideIncome": 0.015
+    },
+    "top_coefficients": {
+      "most_negative": {
+        "c__Housing_Home": -3693.0,
+        "c__Housing_Hostel": -2465.0,
+        "n__Year": -2173.0
+      },
+      "most_positive": {
+        "c__Housing_Flat": 2187.0,
+        "c__Housing_PG": 3971.0,
+        "n__Allowance": 5957.0
+      }
+    }
+  },
+  "classification": {
+    "cv_table": [
+      {
+        "model": "Random Forest",
+        "accuracy": 0.76,
+        "precision": 0.591,
+        "recall": 0.613,
+        "F1": 0.577,
+        "ROC_AUC": 0.81,
+        "AUC_sd": 0.141
+      },
+      {
+        "model": "Logistic Regression",
+        "accuracy": 0.836,
+        "precision": 0.74,
+        "recall": 0.547,
+        "F1": 0.605,
+        "ROC_AUC": 0.778,
+        "AUC_sd": 0.174
+      },
+      {
+        "model": "SVM (RBF)",
+        "accuracy": 0.734,
+        "precision": 0.552,
+        "recall": 0.507,
+        "F1": 0.497,
+        "ROC_AUC": 0.761,
+        "AUC_sd": 0.162
+      },
+      {
+        "model": "Decision Tree (d=3)",
+        "accuracy": 0.744,
+        "precision": 0.556,
+        "recall": 0.517,
+        "F1": 0.497,
+        "ROC_AUC": 0.736,
+        "AUC_sd": 0.193
+      },
+      {
+        "model": "k-NN (k=7)",
+        "accuracy": 0.804,
+        "precision": 0.717,
+        "recall": 0.443,
+        "F1": 0.521,
+        "ROC_AUC": 0.73,
+        "AUC_sd": 0.194
+      },
+      {
+        "model": "Baseline (majority)",
+        "accuracy": 0.72,
+        "precision": 0.0,
+        "recall": 0.0,
+        "F1": 0.0,
+        "ROC_AUC": 0.5,
+        "AUC_sd": 0.0
+      }
+    ],
+    "best_model": "Random Forest",
+    "confusion_matrix": [
+      [
+        29,
+        7
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "perm_importance_auc": {
+      "Housing": 0.014,
+      "Food_Share": 0.006,
+      "Computed_Total": 0.006,
+      "Rent_Share": 0.006,
+      "Campus": 0.005,
+      "Savings_Rate": 0.005,
+      "Spend_to_Income": 0.004,
+      "Allowance": 0.004,
+      "SideIncome": 0.001,
+      "Year": -0.001
+    },
+    "knn_best_k": 3,
+    "knn_best_auc": 0.807,
+    "class_balance": {
+      "0": 36,
+      "1": 14
+    }
+  },
+  "clustering": {
+    "K chosen": 4,
+    "model_selection": [
+      {
+        "k": 2,
+        "inertia": 286.101,
+        "silhouette": 0.249,
+        "davies_bouldin": 1.375,
+        "calinski_harabasz": 19.109
+      },
+      {
+        "k": 3,
+        "inertia": 241.425,
+        "silhouette": 0.217,
+        "davies_bouldin": 1.568,
+        "calinski_harabasz": 15.435
+      },
+      {
+        "k": 4,
+        "inertia": 205.617,
+        "silhouette": 0.236,
+        "davies_bouldin": 1.343,
+        "calinski_harabasz": 14.496
+      },
+      {
+        "k": 5,
+        "inertia": 181.78,
+        "silhouette": 0.241,
+        "davies_bouldin": 1.147,
+        "calinski_harabasz": 13.505
+      },
+      {
+        "k": 6,
+        "inertia": 160.043,
+        "silhouette": 0.248,
+        "davies_bouldin": 0.964,
+        "calinski_harabasz": 13.194
+      },
+      {
+        "k": 7,
+        "inertia": 144.684,
+        "silhouette": 0.183,
+        "davies_bouldin": 1.106,
+        "calinski_harabasz": 12.647
+      },
+      {
+        "k": 8,
+        "inertia": 131.345,
+        "silhouette": 0.186,
+        "davies_bouldin": 1.104,
+        "calinski_harabasz": 12.272
+      }
+    ],
+    "silhouette": 0.236,
+    "cophenetic corr (ward)": 0.522,
+    "ARI KMeans vs Hierarchical": 0.706,
+    "DBSCAN eps": 2.85,
+    "DBSCAN clusters": 1,
+    "DBSCAN noise points": 6,
+    "GMM best K by BIC (K<=5, n=50)": 5,
+    "BIC": {
+      "1": 1197.7,
+      "2": 763.0,
+      "3": 702.5,
+      "4": 637.2,
+      "5": 635.3
+    },
+    "ARI KMeans vs GMM": 0.305,
+    "GMM uncertain students (max prob<0.7)": 0,
+    "profiles": [
+      {
+        "Cluster_KMeans": 0,
+        "n": 20,
+        "Allowance": 22400.0,
+        "SideIncome": 1400.0,
+        "Rent": 9775.0,
+        "Food": 7450.0,
+        "Commute": 1500.0,
+        "Academics": 4400.0,
+        "Cost": 23125.0,
+        "Stress": 5.05,
+        "Savings_Rate": 0.01,
+        "Hostel": 0.0,
+        "PG": 0.65,
+        "Flat": 0.35,
+        "Home": 0.0,
+        "Bidholi": 0.55
+      },
+      {
+        "Cluster_KMeans": 1,
+        "n": 18,
+        "Allowance": 11472.22,
+        "SideIncome": 2611.11,
+        "Rent": 1416.67,
+        "Food": 3638.89,
+        "Commute": 1388.89,
+        "Academics": 2861.11,
+        "Cost": 9305.56,
+        "Stress": 4.0,
+        "Savings_Rate": 0.3,
+        "Hostel": 0.61,
+        "PG": 0.22,
+        "Flat": 0.0,
+        "Home": 0.17,
+        "Bidholi": 0.28
+      },
+      {
+        "Cluster_KMeans": 2,
+        "n": 8,
+        "Allowance": 16437.5,
+        "SideIncome": 0.0,
+        "Rent": 9375.0,
+        "Food": 7000.0,
+        "Commute": 2812.5,
+        "Academics": 4187.5,
+        "Cost": 23375.0,
+        "Stress": 8.88,
+        "Savings_Rate": -0.48,
+        "Hostel": 0.12,
+        "PG": 0.88,
+        "Flat": 0.0,
+        "Home": 0.0,
+        "Bidholi": 1.0
+      },
+      {
+        "Cluster_KMeans": 3,
+        "n": 4,
+        "Allowance": 28500.0,
+        "SideIncome": 11750.0,
+        "Rent": 11125.0,
+        "Food": 10250.0,
+        "Commute": 4250.0,
+        "Academics": 7375.0,
+        "Cost": 33000.0,
+        "Stress": 4.25,
+        "Savings_Rate": 0.18,
+        "Hostel": 0.0,
+        "PG": 0.25,
+        "Flat": 0.75,
+        "Home": 0.0,
+        "Bidholi": 1.0
+      }
+    ]
+  },
+  "association": {
+    "frequent_itemsets": 302,
+    "rules_kept": 60,
+    "top_rules": [
+      {
+        "antecedent": "Housing=Hostel",
+        "consequent": "Cost=Low & Food=High",
+        "support": 0.18,
+        "confidence": 0.75,
+        "lift": 3.75,
+        "leverage": 0.132,
+        "conviction": 3.2
+      },
+      {
+        "antecedent": "Housing=Hostel",
+        "consequent": "Cost=Low & Side=No",
+        "support": 0.22,
+        "confidence": 0.917,
+        "lift": 3.526,
+        "leverage": 0.158,
+        "conviction": 8.88
+      },
+      {
+        "antecedent": "Housing=Hostel",
+        "consequent": "Cost=Low & Income=Low",
+        "support": 0.22,
+        "confidence": 0.917,
+        "lift": 3.274,
+        "leverage": 0.153,
+        "conviction": 8.64
+      },
+      {
+        "antecedent": "Balance=Deficit & Income=Low",
+        "consequent": "Stress=High",
+        "support": 0.12,
+        "confidence": 0.857,
+        "lift": 3.061,
+        "leverage": 0.081,
+        "conviction": 5.04
+      },
+      {
+        "antecedent": "Housing=Hostel",
+        "consequent": "Cost=Low",
+        "support": 0.24,
+        "confidence": 1.0,
+        "lift": 2.941,
+        "leverage": 0.158,
+        "conviction": Infinity
+      },
+      {
+        "antecedent": "Housing=Hostel & Side=No",
+        "consequent": "Cost=Low",
+        "support": 0.22,
+        "confidence": 1.0,
+        "lift": 2.941,
+        "leverage": 0.145,
+        "conviction": Infinity
+      },
+      {
+        "antecedent": "Campus=Kandoli & Housing=Hostel",
+        "consequent": "Cost=Low",
+        "support": 0.2,
+        "confidence": 1.0,
+        "lift": 2.941,
+        "leverage": 0.132,
+        "conviction": Infinity
+      },
+      {
+        "antecedent": "Food=High & Housing=Hostel",
+        "consequent": "Cost=Low",
+        "support": 0.18,
+        "confidence": 1.0,
+        "lift": 2.941,
+        "leverage": 0.119,
+        "conviction": Infinity
+      },
+      {
+        "antecedent": "Housing=Hostel & Income=Low",
+        "consequent": "Cost=Low",
+        "support": 0.22,
+        "confidence": 1.0,
+        "lift": 2.941,
+        "leverage": 0.145,
+        "conviction": Infinity
+      },
+      {
+        "antecedent": "Balance=Surplus & Housing=Hostel",
+        "consequent": "Cost=Low",
+        "support": 0.2,
+        "confidence": 1.0,
+        "lift": 2.941,
+        "leverage": 0.132,
+        "conviction": Infinity
+      }
+    ],
+    "stress_or_deficit_rules": [
+      {
+        "antecedent": "Balance=Deficit & Income=Low",
+        "consequent": "Stress=High",
+        "support": 0.12,
+        "confidence": 0.857,
+        "lift": 3.061,
+        "leverage": 0.081,
+        "conviction": 5.04
+      },
+      {
+        "antecedent": "Balance=Deficit & Campus=Bidholi",
+        "consequent": "Stress=High",
+        "support": 0.2,
+        "confidence": 0.769,
+        "lift": 2.747,
+        "leverage": 0.127,
+        "conviction": 3.12
+      },
+      {
+        "antecedent": "Stress=High",
+        "consequent": "Balance=Deficit & Campus=Bidholi",
+        "support": 0.2,
+        "confidence": 0.714,
+        "lift": 2.747,
+        "leverage": 0.127,
+        "conviction": 2.59
+      },
+      {
+        "antecedent": "Income=Low & Stress=High",
+        "consequent": "Balance=Deficit",
+        "support": 0.12,
+        "confidence": 1.0,
+        "lift": 2.632,
+        "leverage": 0.074,
+        "conviction": Infinity
+      },
+      {
+        "antecedent": "Side=No & Stress=High",
+        "consequent": "Balance=Deficit",
+        "support": 0.22,
+        "confidence": 0.917,
+        "lift": 2.412,
+        "leverage": 0.129,
+        "conviction": 7.44
+      },
+      {
+        "antecedent": "Campus=Bidholi & Stress=High",
+        "consequent": "Balance=Deficit",
+        "support": 0.2,
+        "confidence": 0.909,
+        "lift": 2.392,
+        "leverage": 0.116,
+        "conviction": 6.82
+      },
+      {
+        "antecedent": "Stress=High",
+        "consequent": "Balance=Deficit & Side=No",
+        "support": 0.22,
+        "confidence": 0.786,
+        "lift": 2.311,
+        "leverage": 0.125,
+        "conviction": 3.08
+      },
+      {
+        "antecedent": "Food=NotHigh & Stress=High",
+        "consequent": "Balance=Deficit",
+        "support": 0.16,
+        "confidence": 0.8,
+        "lift": 2.105,
+        "leverage": 0.084,
+        "conviction": 3.1
+      }
+    ]
+  },
+  "anomaly": {
+    "votes_ge2": [
+      {
+        "ID": 4,
+        "Campus": "Bidholi",
+        "Housing": "Flat",
+        "Allowance": 45000.0,
+        "SideIncome": 0,
+        "Computed_Total": 43000.0,
+        "Stress": 3,
+        "Anom_Votes": 4
+      },
+      {
+        "ID": 18,
+        "Campus": "Bidholi",
+        "Housing": "Home",
+        "Allowance": 5000.0,
+        "SideIncome": 25000,
+        "Computed_Total": 7500.0,
+        "Stress": 2,
+        "Anom_Votes": 4
+      },
+      {
+        "ID": 14,
+        "Campus": "Bidholi",
+        "Housing": "PG",
+        "Allowance": 9500.0,
+        "SideIncome": 0,
+        "Computed_Total": 21500.0,
+        "Stress": 8,
+        "Anom_Votes": 3
+      },
+      {
+        "ID": 22,
+        "Campus": "Bidholi",
+        "Housing": "Flat",
+        "Allowance": 19000.0,
+        "SideIncome": 19000,
+        "Computed_Total": 27000.0,
+        "Stress": 5,
+        "Anom_Votes": 3
+      },
+      {
+        "ID": 35,
+        "Campus": "Bidholi",
+        "Housing": "PG",
+        "Allowance": 8500.0,
+        "SideIncome": 10000,
+        "Computed_Total": 10000.0,
+        "Stress": 9,
+        "Anom_Votes": 3
+      },
+      {
+        "ID": 45,
+        "Campus": "Bidholi",
+        "Housing": "PG",
+        "Allowance": 27000.0,
+        "SideIncome": 11000,
+        "Computed_Total": 35500.0,
+        "Stress": 6,
+        "Anom_Votes": 2
+      }
+    ],
+    "counts": {
+      "Anom_IsoForest": 5,
+      "Anom_LOF": 5,
+      "Anom_Mahal": 3,
+      "Anom_RobustZ": 15
+    }
+  },
+  "peer_recommender": {
+    "LOO_MAE": 3670,
+    "LOO_R2": 0.662
+  }
+}

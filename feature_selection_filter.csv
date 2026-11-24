@@ -1,0 +1,10 @@
+,mutual_info,abs_corr
+Is_Offcampus_Paying,0.531,0.806
+Allowance,0.518,0.843
+Total_Income,0.349,0.743
+Has_Side_Income,0.132,0.104
+SideIncome,0.042,0.037
+Stress,0.017,0.295
+Self_Funded_Share,0.012,0.075
+Age,0.0,0.235
+Year,0.0,0.161

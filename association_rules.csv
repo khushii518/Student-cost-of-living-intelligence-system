@@ -1,0 +1,61 @@
+antecedent,consequent,support,confidence,lift,leverage,conviction
+Housing=Hostel,Cost=Low & Food=High,0.18,0.75,3.75,0.132,3.2
+Housing=Hostel,Cost=Low & Side=No,0.22,0.917,3.526,0.158,8.88
+Housing=Hostel,Cost=Low & Income=Low,0.22,0.917,3.274,0.153,8.64
+Balance=Deficit & Income=Low,Stress=High,0.12,0.857,3.061,0.081,5.04
+Housing=Hostel,Cost=Low,0.24,1.0,2.941,0.158,inf
+Housing=Hostel & Side=No,Cost=Low,0.22,1.0,2.941,0.145,inf
+Campus=Kandoli & Housing=Hostel,Cost=Low,0.2,1.0,2.941,0.132,inf
+Food=High & Housing=Hostel,Cost=Low,0.18,1.0,2.941,0.119,inf
+Housing=Hostel & Income=Low,Cost=Low,0.22,1.0,2.941,0.145,inf
+Balance=Surplus & Housing=Hostel,Cost=Low,0.2,1.0,2.941,0.132,inf
+Housing=Hostel,Balance=Surplus & Income=Low,0.18,0.75,2.885,0.118,2.96
+Housing=Flat,Balance=Surplus & Income=High,0.16,0.8,2.857,0.104,3.6
+Housing=Hostel,Balance=Surplus & Cost=Low,0.2,0.833,2.778,0.128,4.2
+Balance=Deficit & Campus=Bidholi,Stress=High,0.2,0.769,2.747,0.127,3.12
+Stress=High,Balance=Deficit & Campus=Bidholi,0.2,0.714,2.747,0.127,2.59
+Balance=Surplus & Income=Low,Cost=Low,0.24,0.923,2.715,0.152,8.58
+Cost=Low,Balance=Surplus & Income=Low,0.24,0.706,2.715,0.152,2.516
+Campus=Kandoli & Income=Low,Cost=Low,0.22,0.917,2.696,0.138,7.92
+Income=Low & Stress=High,Balance=Deficit,0.12,1.0,2.632,0.074,inf
+Food=High & Income=Low,Cost=Low,0.16,0.889,2.614,0.099,5.94
+Income=Low & Stress=Mid,Cost=Low,0.14,0.875,2.574,0.086,5.28
+Side=No & Stress=High,Balance=Deficit,0.22,0.917,2.412,0.129,7.44
+Campus=Bidholi & Stress=High,Balance=Deficit,0.2,0.909,2.392,0.116,6.82
+Housing=Hostel,Balance=Surplus & Campus=Kandoli,0.18,0.75,2.344,0.103,2.72
+Housing=Flat,Balance=Surplus & Campus=Bidholi,0.14,0.7,2.333,0.08,2.333
+Stress=High,Balance=Deficit & Side=No,0.22,0.786,2.311,0.125,3.08
+Campus=Kandoli & Food=High,Cost=Low,0.14,0.778,2.288,0.079,2.97
+Income=High & Side=Yes,Cost=High,0.14,0.778,2.16,0.075,2.88
+Balance=Surplus & Food=High,Cost=Low,0.16,0.727,2.139,0.085,2.42
+Food=NotHigh & Stress=High,Balance=Deficit,0.16,0.8,2.105,0.084,3.1
+Income=Mid & Side=No,Balance=Deficit,0.16,0.8,2.105,0.084,3.1
+Housing=PG & Income=High,Cost=High,0.12,0.75,2.083,0.062,2.56
+Housing=Flat & Income=High,Cost=High,0.12,0.75,2.083,0.062,2.56
+Balance=Surplus & Housing=Flat,Cost=High,0.12,0.75,2.083,0.062,2.56
+Stress=High,Balance=Deficit,0.22,0.786,2.068,0.114,2.893
+Income=Low,Cost=Low,0.28,0.7,2.059,0.144,2.2
+Food=NotHigh & Income=High,Cost=High,0.16,0.727,2.02,0.081,2.347
+Cost=High & Housing=PG,Balance=Deficit,0.18,0.75,1.974,0.089,2.48
+Campus=Bidholi & Income=Mid,Balance=Deficit,0.12,0.75,1.974,0.059,2.48
+Housing=PG & Stress=High,Balance=Deficit,0.18,0.75,1.974,0.089,2.48
+Cost=High & Stress=High,Balance=Deficit,0.12,0.75,1.974,0.059,2.48
+Income=High,Cost=High,0.24,0.706,1.961,0.118,2.176
+Food=NotHigh & Income=Mid,Balance=Deficit,0.16,0.727,1.914,0.076,2.273
+Cost=High & Side=No,Balance=Deficit,0.16,0.727,1.914,0.076,2.273
+Housing=Hostel,Balance=Surplus & Side=No,0.18,0.75,1.875,0.084,2.4
+Housing=PG & Income=Mid,Balance=Deficit,0.14,0.7,1.842,0.064,2.067
+Housing=Flat,Balance=Surplus & Food=NotHigh,0.14,0.7,1.75,0.06,2.0
+Cost=Low & Stress=Mid,Balance=Surplus,0.14,1.0,1.613,0.053,inf
+Income=Low & Stress=Mid,Balance=Surplus,0.16,1.0,1.613,0.061,inf
+Cost=Low & Stress=Low,Balance=Surplus,0.14,1.0,1.613,0.053,inf
+Housing=Flat & Income=High,Balance=Surplus,0.16,1.0,1.613,0.061,inf
+Cost=High & Housing=Flat,Balance=Surplus,0.12,1.0,1.613,0.046,inf
+Food=NotHigh & Stress=Low,Balance=Surplus,0.18,1.0,1.613,0.068,inf
+Income=High & Stress=Low,Balance=Surplus,0.12,1.0,1.613,0.046,inf
+Campus=Bidholi & Stress=Low,Balance=Surplus,0.16,1.0,1.613,0.061,inf
+Cost=Low & Food=NotHigh,Balance=Surplus,0.14,1.0,1.613,0.053,inf
+Food=NotHigh & Side=Yes,Balance=Surplus,0.16,1.0,1.613,0.061,inf
+Stress=Low,Balance=Surplus,0.26,0.929,1.498,0.086,5.32
+Campus=Kandoli & Cost=Low,Balance=Surplus,0.22,0.917,1.478,0.071,4.56
+Food=NotHigh & Income=High,Balance=Surplus,0.2,0.909,1.466,0.064,4.18

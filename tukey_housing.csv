@@ -1,0 +1,7 @@
+pair,mean_diff,p_adj
+Flat vs Home,19300,0.0
+Flat vs Hostel,17050,0.0
+Flat vs PG,3140,0.3775
+Home vs Hostel,-2250,0.9067
+Home vs PG,-16160,0.0
+Hostel vs PG,-13910,0.0

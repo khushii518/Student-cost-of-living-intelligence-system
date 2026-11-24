@@ -1,0 +1,15 @@
+step,detail,rows_affected
+rename,"Standardised 16 column names (short, snake/Title case, units dropped)",16.0
+text-normalise,"Trimmed spaces + Title-cased Locality ('bidholi','nanda ki chowki','Prem nagar ' etc.): 12 -> 9 unique values",3.0
+category-merge,"'Shared Flat / PG' merged into 'PG (Shared)' (same concept, 1 row)",1.0
+category-merge,"Gender: missing + 'Prefer not to say' -> 'Undisclosed' (kept, not dropped)",2.0
+feature-group,Added Housing (Hostel/PG/Flat/Home) and Stream_Group for stable group statistics,50.0
+impute,Allowance: 1 missing -> median of same Housing group (+ Allowance_Imputed flag),1.0
+impute,Commute: 1 missing -> median of same Housing group (+ Commute_Imputed flag),1.0
+impute,Stress: 1 missing -> median of same Housing group (+ Stress_Imputed flag),1.0
+dtype,Cast ID/Year/Age/Stress to integer; money columns to float,
+validate,Age vs Year plausibility (expected age ~ 17+Year): flagged implausible rows,1.0
+validate,"Itemised total vs respondent's Reported_Total differs by >25%: flagged (Computed_Total, the sum of the 4 items, is used as the modelling target)",5.0
+validate,Hostel students report Rent=0 -> hostel fee is NOT in their cost; flagged so cost comparisons across housing are interpreted correctly,12.0
+outliers,"Tukey 1.5*IQR fences on 7 money columns: outlier rows flagged and RETAINED (genuine high-income / side-earning students, not errors)",11.0
+duplicates,Exact duplicate rows: 0; duplicate IDs: 0,0.0
